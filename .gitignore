@@ -1,0 +1,73 @@
+#DS Store
+.DS_Store
+
+# Compiled python files
+__pycache__/
+
+# Python virtual environment
+venv/
+pyvenv.cfg
+pyvenv.config/
+
+# Binaries
+/bin/
+*.pyc
+*.pyo
+*.pyd
+
+#dependencies
+/lib/
+
+# Compiled source
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Logs and databases
+*.log
+*.sql
+*.sqlite
+
+# Package files
+*.jar
+*.war
+*.ear
+*.egg-info/
+dist/
+build/
+eggs/
+
+# Ignore pipenv virtual environment
+Pipfile
+Pipfile.lock
+
+# Ignore VSCode settings
+.vscode/
+
+# Ignore Jupyter Notebook checkpoints
+# .ipynb_checkpoints/
+
+# Ignore local development settings
+# .idea/
+
+# Ignore local .env files
+# .env
+# .env.local
+# .env.*.local
+
+# Ignore mypy cache
+# .mypy_cache/
+
+# Ignore pytest cache
+# __pycache__/
+# .pytest_cache/
+
+# Ignore coverage files
+# .coverage
+# htmlcov/
+
+# Ignore pycache in source
+# /source/__pycache__/
