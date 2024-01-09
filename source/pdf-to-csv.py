@@ -34,7 +34,7 @@ def extract_table_from_pdf(pdf_path, page_number=1):
     table_area = [502.56, 33.84, 685.44, 560.88]  # Adjust these values based on your PDF layout
 
     # Read the PDF and extract the table
-    table_df = tabula.read_pdf(pdf_path)
+    table_df = tabula.read_pdf(pdf_path, pages=page_number, multiple_tables=True, pandas_options={'header': None}, area=table_area)
 
     return table_df
 
