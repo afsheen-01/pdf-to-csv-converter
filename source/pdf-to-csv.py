@@ -47,8 +47,15 @@ def extract_rbl_data_from_pdf(pdf_path):
 
         # Save the table data to a CSV file
         if records_data:
-            print(records_data[0])
             records_data[0].to_csv("../rbl_table_data.csv", index=False)
+
+            # Move values in 'Transaction Details' column one place up
+            records_data[0]['Transaction Details'] = records_data[0]['Transaction Details'].shift(1)
+
+            print(records_data[0])
+
+            # Write the modified records to a new CSV file
+            records_data[0].to_csv("../modified_rbl_table_data.csv", index=False)
 
         clean_data = clean_up_rbl_data(account_details_data)
 
